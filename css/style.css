@@ -489,12 +489,12 @@ footer a {
 @media all and (min-width: 992px) {
   body,
   main {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
   }
 
   #nav_div img {
-    width: 250px;
+    width: 350px;
     height: auto;
   }
 
