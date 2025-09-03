@@ -1,0 +1,516 @@
+/*loading spinner debut*/
+.chargement {
+  /*max-width: 1400px;*/
+  /*margin: auto;*/
+  position: fixed;
+  z-index: 1;
+  background: #ffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  animation: disparait 1s 3s forwards;
+}
+
+.point {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(#ff79da, #9356dc);
+  margin: 0 20px;
+  animation: charge infinite 0.3s alternate;
+}
+
+.p2 {
+  animation-delay: 0.05s;
+}
+
+.p3 {
+  animation-delay: 0.1s;
+}
+
+@keyframes charge {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes disparait {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+/*loading spinner fin*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#nav_div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#nav_div img {
+  width: 60%;
+  padding: 20px;
+}
+
+#position_div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: gainsboro;
+}
+
+#position_div i {
+  margin-left: 95px;
+}
+
+#position_div input {
+  display: flex;
+  justify-content: center;
+  border: 0px;
+  margin-left: 15px;
+  font-weight: 700;
+  background-color: gainsboro;
+}
+
+::placeholder {
+  color: black;
+}
+
+#presentation {
+  background-color: #f3f3f3;
+}
+
+.titre {
+  padding-top: 20px;
+}
+
+.titre h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 900;
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+.titre p {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  text-align: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.recherche_div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  /*margin-top: 40px;
+  margin-bottom: 100px;*/
+  border-radius: 100px;
+  height: 55px;
+  font-size: 19px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  border: 0 solid transparent;
+  box-shadow: 0px 3px 8px 7px rgba(125, 125, 125, 0.32);
+}
+
+.recherche_div {
+  /*padding-bottom: 1px;*/
+  padding: 50px;
+}
+
+main {
+  box-sizing: border-box;
+}
+
+#filtre_titre h2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+#filtre_div ol {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#filtre_div {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.filtre_element_icone {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: gray;
+  margin-right: 18px;
+}
+
+.filtre_element_icone :hover {
+  color: #9356dc;
+}
+
+.filtre_element_texte {
+  color: black;
+}
+
+.filtre_numero {
+  border: 2px solid white;
+  /*font-size: 25px;*/
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+  /*margin-right: 18px;*/
+  margin-left: -17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356dc;
+  color: white;
+}
+
+#filtre_div li {
+  border: 2px solid whitesmoke;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 28px;
+  height: 74px;
+  width: auto;
+  /* margin-bottom: 30px !important;
+  padding: 20px;*/
+  font-family: "Roboto";
+  font-weight: bold;
+  /*font-size: larger;*/
+  background-color: whitesmoke;
+}
+
+#filtre_div ol :hover {
+  background-color: #f5effd;
+}
+
+#filtre_div ol:hover i {
+  color: #9356dc;
+}
+
+#vignette {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 100%;
+  border: whitesmoke;
+}
+
+#vignette_titre h2 {
+  display: flex;
+  justify-content: flex-start;
+  /*margin-bottom: -15px;*/
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+#restaurant_nouveau,
+#restaurant_ancien {
+  width: 100%;
+}
+
+.restaurant_img img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.vignette_annotation {
+  display: flex;
+  justify-content: right;
+  width: 96%;
+  position: relative;
+  top: -230px;
+  font-size: 20px;
+  color: green;
+}
+
+.vignette_annotation span {
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.restaurant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.vignette_restaurant {
+  border: 1px solid gray;
+  border-radius: 22px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
+  margin-top: 40px;
+}
+
+.restaurant_nom {
+  padding: 10px;
+  margin-top: -35px;
+  color: black;
+}
+
+h4 {
+  font-weight: 900;
+  font-family: "Roboto";
+  font-size: 25px;
+}
+
+.restaurant_texte_icone {
+  border: 0 solid transparent;
+  background-color: whitesmoke;
+  /*position: relative;
+  top: -80px;
+  right: -315px;*/
+  font-size: 25px;
+  margin-right: 50px;
+}
+
+.icone_like2 {
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.icone_like1,
+.icone_like2 {
+  cursor: pointer;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.restaurant_texte_icone:hover .icone_like1 {
+  opacity: 0;
+}
+
+.restaurant_texte_icone:hover .icone_like2 {
+  opacity: 1;
+}
+/*.icone_like1 {
+  border: 0 solid transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.icone_like1:hover {
+  animation: vide 1s;
+}
+
+.icone_like2 {
+  border: 0 solid transparent;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  color: white;
+}
+
+.icone_like2:hover {
+  animation: remplis 2s ease-in-out both;
+}
+
+@keyframes vide {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes remplis {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+    background: linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    background-image: linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}*/
+
+#restaurant_nouveau a {
+  color: black;
+}
+
+.restaurant_nom h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+#restaurant_nouveau .restaurant_nom,
+#restaurant_ancien .restaurant_nom {
+  /*margin-top: -60px;*/
+  margin-bottom: 15px;
+  /*line-height: 5px;*/
+  display: flex;
+  justify-content: space-between;
+}
+
+#restaurant_ancien img {
+  margin-bottom: 45px;
+}
+
+main a {
+  text-decoration: none;
+  background-color: white;
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 22px;
+}
+
+footer {
+  background-color: rgb(77, 77, 77);
+  line-height: 32px;
+  padding-bottom: 15px;
+  font-family: "Roboto";
+}
+
+.footer_logo {
+  font-family: "Shrikhand";
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding-top: 25px;
+  font-size: 27px;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_icone_ustensiles {
+  color: white;
+  padding: 9px;
+}
+
+.footer_icone_main {
+  color: white;
+  padding: 5px;
+}
+
+/*tablettes à partir de 768px*/
+
+@media all and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .point {
+    height: 30px;
+    width: 30px;
+  }
+
+  .restaurant_img {
+    width: 100%;
+  }
+
+  .vignette_restaurant {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+/*version desktop*/
+
+@media all and (min-width: 992px) {
+  body,
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #nav_div img {
+    width: 250px;
+    height: auto;
+  }
+
+  .titre h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .titre p {
+    font-size: 20px;
+  }
+
+  .recherche_div button {
+    height: 50px;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
