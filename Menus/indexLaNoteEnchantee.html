@@ -1,245 +1,257 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../CSS/styleMenus.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/styleMenus.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--importation de la police logo et titres-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
 
     <!--importation de la police texte-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--importation des icones-->
 
-    <script src="https://kit.fontawesome.com/bcb72f7e2e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
-        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <script
+      src="https://kit.fontawesome.com/bcb72f7e2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+      integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM"
+      crossorigin="anonymous"
+    />
     <title>ohmyfood</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav id="header_logo_icone">
-            <a href="../index.html">
-                <i class="fas fa-arrow-left"></i>
-            </a>
-            <img id="header_logo" src="../img/ohmyfood.png" alt="ohmyfood logo">
-            <span></span>
-        </nav>
+      <nav id="header_logo_icone">
+        <a href="../index.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <img id="header_logo" src="../img/ohmyfood.png" alt="ohmyfood logo" />
+        <span></span>
+      </nav>
 
-        <img id="header_img" src="../img/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-
+      <img
+        id="header_img"
+        src="../img/stil-u2Lp8tXIcjw-unsplash.jpg"
+        alt="La note enchantée"
+      />
     </header>
 
     <main id="restaurant_carte">
+      <div class="restaurant_titre">
+        <h2 class="restaurant_nom">La note enchantée</h2>
 
-        <div class="restaurant_titre">
-            <h2 class="restaurant_nom">La note enchantée</h2>
+        <button class="restaurant_texte_icone">
+          <span class="icone_like1">
+            <i class="far fa-heart"></i>
+          </span>
+          <span class="icone_like2">
+            <i class="fas fa-heart"></i>
+          </span>
+        </button>
+      </div>
+      <div id="menu_bloc">
+        <section id="bloc_entrees">
+          <div class="bloc_entrees_titre">
+            <h3>ENTRÉES</h3>
+            <hr />
+          </div>
 
-            <button class="restaurant_texte_icone">
-                <span class="icone_like1">
-                    <i class="far fa-heart"></i>
-                </span>
-                <span class="icone_like2">
-                    <i class="fas fa-heart"></i>
-                </span>
-            </button>
+          <div class="entrees_choix" id="entrees_1">
+            <div class="vignette_details">
+              <div class="bold">Ravioles de foie gras</div>
+              <div class="vignette_texte">
+                Accompagnés de leur crème à la truffe
+              </div>
+            </div>
+            <div class="vignette_prix">25€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
 
-        </div>
-        <div id="menu_bloc">
-            <section id="bloc_entrees">
+          <div class="entrees_choix" id="entrees_2">
+            <div class="vignette_details">
+              <div class="bold">Caviar osciètre</div>
+              <div class="vignette_texte">
+                Sur blini à la farine de blé noir
+              </div>
+            </div>
+            <div class="vignette_prix">35€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
 
-                <div class="bloc_entrees_titre">
-                    <h3>ENTRÉES</h3>
-                    <hr>
-                </div>
+          <div class="entrees_choix" id="entrees_3">
+            <div class="vignette_details">
+              <div class="bold">Homard et espuma de potiron</div>
+              <div class="vignette_texte">Mariné aux zests d'orange</div>
+            </div>
+            <div class="vignette_prix">20€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
 
-                <div class="entrees_choix" id="entrees_1">
-                    <div class="vignette_details">
-                        <div class="bold">Ravioles de foie gras</div>
-                        <div class="vignette_texte">Accompagnés de leur crème à la truffe</div>
-                    </div>
-                    <div class="vignette_prix">25€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
+          <div class="entrees_choix" id="entrees_4">
+            <div class="vignette_details">
+              <div class="bold">Foie gras de canard cuit entier</div>
+              <div class="vignette_texte">
+                Confiture de figue et pain toasté
+              </div>
+            </div>
+            <div class="vignette_prix">35€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+        </section>
 
-                </div>
+        <section id="bloc_plats">
+          <div class="bloc_plats_titre">
+            <h3>PLATS</h3>
+            <hr />
+          </div>
 
-                <div class="entrees_choix" id="entrees_2">
-                    <div class="vignette_details">
-                        <div class="bold">Caviar osciètre</div>
-                        <div class="vignette_texte">Sur blini à la farine de blé noir</div>
-                    </div>
-                    <div class="vignette_prix">35€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
-                </div>
+          <div class="plats_choix" id="plats_1">
+            <div class="vignette_details">
+              <div class="bold">Noix de coquille Saint-Jacques</div>
+              <div class="vignette_texte">Sur lit de purée de céleri-raves</div>
+            </div>
+            <div class="vignette_prix">40€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
 
-                <div class="entrees_choix" id="entrees_3">
-                    <div class="vignette_details">
-                        <div class="bold">Homard et espuma de potiron</div>
-                        <div class="vignette_texte">Mariné aux zests d'orange</div>
-                    </div>
-                    <div class="vignette_prix">20€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
-                </div>
+          <div class="plats_choix" id="plats_2">
+            <div class="vignette_details">
+              <div class="bold">Langoustine poêlée</div>
+              <div class="vignette_texte">Purée de patate douce</div>
+            </div>
+            <div class="vignette_prix">35€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
 
-                <div class="entrees_choix" id="entrees_4">
-                    <div class="vignette_details">
-                        <div class="bold">Foie gras de canard cuit entier</div>
-                        <div class="vignette_texte">Confiture de figue et pain toasté</div>
-                    </div>
-                    <div class="vignette_prix">35€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
-                </div>
+          <div class="plats_choix" id="plats_3">
+            <div class="vignette_details">
+              <div class="bold">Mijoté de queue de boeuf</div>
+              <div class="vignette_texte">
+                Et riz sauvage aux zests de citron
+              </div>
+            </div>
+            <div class="vignette_prix">44€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+        </section>
 
-            </section>
+        <section id="bloc_desserts">
+          <div class="bloc_desserts_titre">
+            <h3>DESSERTS</h3>
+            <hr />
+          </div>
 
-            <section id="bloc_plats">
+          <div class="desserts_choix" id="desserts_1">
+            <div class="vignette_details">
+              <div class="bold">Macaron noisette et chocolat</div>
+              <div class="vignette_texte">
+                Glace au caramel brun et sel de Guérande
+              </div>
+            </div>
+            <div class="vignette_prix">18€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
 
-                <div class="bloc_plats_titre">
-                    <h3>PLATS</h3>
-                    <hr>
-                </div>
+          <div class="desserts_choix" id="desserts_2">
+            <div class="vignette_details">
+              <div class="bold">Baba au rhum revisité</div>
+              <div class="vignette_texte">Avec son coulis de citron</div>
+            </div>
+            <div class="vignette_prix">22€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
 
-                <div class="plats_choix" id="plats_1">
-                    <div class="vignette_details">
-                        <div class="bold">Noix de coquille Saint-Jacques</div>
-                        <div class="vignette_texte">Sur lit de purée de céleri-raves</div>
-                    </div>
-                    <div class="vignette_prix">40€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
-                </div>
+          <div class="desserts_choix" id="desserts_3">
+            <div class="vignette_details">
+              <div class="bold">Tarte au citron meringuée</div>
+              <div class="vignette_texte">Destructurée</div>
+            </div>
+            <div class="vignette_prix">23€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+        </section>
+      </div>
 
-                <div class="plats_choix" id="plats_2">
-                    <div class="vignette_details">
-                        <div class="bold">Langoustine poêlée</div>
-                        <div class="vignette_texte">Purée de patate douce</div>
-                    </div>
-                    <div class="vignette_prix">35€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
-                </div>
-
-                <div class="plats_choix" id="plats_3">
-                    <div class="vignette_details">
-                        <div class="bold">Mijoté de queue de boeuf</div>
-                        <div class="vignette_texte">Et riz sauvage aux zests de citron</div>
-                    </div>
-                    <div class="vignette_prix">44€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
-                </div>
-
-            </section>
-
-            <section id="bloc_desserts">
-
-                <div class="bloc_desserts_titre">
-                    <h3>DESSERTS</h3>
-                    <hr>
-                </div>
-
-                <div class="desserts_choix" id="desserts_1">
-                    <div class="vignette_details">
-                        <div class="bold">Macaron noisette et chocolat</div>
-                        <div class="vignette_texte">Glace au caramel brun et sel de Guérande</div>
-                    </div>
-                    <div class="vignette_prix">18€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
-                </div>
-
-                <div class="desserts_choix" id="desserts_2">
-                    <div class="vignette_details">
-                        <div class="bold">Baba au rhum revisité</div>
-                        <div class="vignette_texte">Avec son coulis de citron</div>
-                    </div>
-                    <div class="vignette_prix">22€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
-                </div>
-
-                <div class="desserts_choix" id="desserts_3">
-                    <div class="vignette_details">
-                        <div class="bold">Tarte au citron meringuée</div>
-                        <div class="vignette_texte">Destructurée</div>
-                    </div>
-                    <div class="vignette_prix">23€</div>
-                    <div class="validation">
-                        <i class="fas fa-check-circle fa-2x"></i>
-                    </div>
-                </div>
-
-            </section>
-        </div>
-
-        <div id="nav_div">
-            <button>Commander</button>
-        </div>
-
+      <div id="nav_div">
+        <button>Commander</button>
+      </div>
     </main>
 
     <footer>
-        <div>
-            <span class="footer_logo"> ohmyfood </span>
-        </div>
-        <ul>
-            <li>
-                <span class="footer_icone_ustensiles">
-                    <i class="fa-sharp fa-solid fa-utensils"></i>
-                </span>
-                <a href="#">
-                    <span class="footer_texte">Proposer un restaurant </span>
-                </a>
-            </li>
+      <div>
+        <span class="footer_logo"> ohmyfood </span>
+      </div>
+      <ul>
+        <li>
+          <span class="footer_icone_ustensiles">
+            <i class="fa-sharp fa-solid fa-utensils"></i>
+          </span>
+          <a href="#">
+            <span class="footer_texte">Proposer un restaurant </span>
+          </a>
+        </li>
 
-            <li>
-                <span class="footer_icone_main">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                </span>
-                <a href="#">
-                    <span class="footer_texte"> Devenir partenaire </span>
-                </a>
-            </li>
+        <li>
+          <span class="footer_icone_main">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </span>
+          <a href="#">
+            <span class="footer_texte"> Devenir partenaire </span>
+          </a>
+        </li>
 
-            <li>
-                <a href="#">
-                    <span class="footer_texte"> Mentions légales </span>
-                </a>
-            </li>
+        <li>
+          <a href="#">
+            <span class="footer_texte"> Mentions légales </span>
+          </a>
+        </li>
 
-            <li>
-                <a href="mailto:san@antonio.net">
-                    <span class="footer_texte"> Contact </span>
-                </a>
-            </li>
-        </ul>
+        <li>
+          <a href="mailto:san@antonio.net">
+            <span class="footer_texte"> Contact </span>
+          </a>
+        </li>
+      </ul>
     </footer>
-</body>
-
+  </body>
 </html>

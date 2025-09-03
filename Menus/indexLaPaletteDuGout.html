@@ -1,236 +1,249 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../CSS/styleMenus.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/styleMenus.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--importation de la police logo et titres-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
 
     <!--importation de la police texte-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--importation des icones-->
 
-    <script src="https://kit.fontawesome.com/bcb72f7e2e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
-        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <script
+      src="https://kit.fontawesome.com/bcb72f7e2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+      integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM"
+      crossorigin="anonymous"
+    />
     <title>ohmyfood</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
+      <nav id="header_logo_icone">
+        <a href="../index.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
 
-        <nav id="header_logo_icone">
-            <a href="../index.html">
-                <i class="fas fa-arrow-left"></i>
-            </a>
+        <img id="header_logo" src="../img/ohmyfood.png" alt="ohmyfood logo" />
+        <span></span>
+      </nav>
 
-            <img id="header_logo" src="../img/ohmyfood.png" alt="ohmyfood logo">
-            <span></span>
-        </nav>
-
-            <img id="header_img" src="../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-
+      <img
+        id="header_img"
+        src="../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="La palette du goût"
+      />
     </header>
 
     <main id="restaurant_carte">
+      <div class="restaurant_titre">
+        <h2 class="restaurant_nom">La palette du goût</h2>
 
-        <div class="restaurant_titre">
-            <h2 class="restaurant_nom">La palette du goût</h2>
+        <button class="restaurant_texte_icone">
+          <span class="icone_like1">
+            <i class="far fa-heart"></i>
+          </span>
 
-            <button class="restaurant_texte_icone">
+          <span class="icone_like2">
+            <i class="fas fa-heart"></i>
+          </span>
+        </button>
+      </div>
 
-                <span class="icone_like1">
-                    <i class="far fa-heart"></i>
-                </span>
+      <div id="menu_bloc">
+        <section id="bloc_entrees">
+          <div class="bloc_entrees_titre">
+            <h3>ENTRÉES</h3>
+            <hr />
+          </div>
 
-                <span class="icone_like2">
-                    <i class="fas fa-heart"></i>
-                </span>
-
-            </button>
-        </div>
-
-            <div id="menu_bloc">
-                <section id="bloc_entrees">
-
-                    <div class="bloc_entrees_titre">
-                        <h3>ENTRÉES</h3>
-                        <hr>
-                    </div>
-
-                    <div class="entrees_choix" id="entrees_1">
-                        <div class="vignette_details">
-                            <div class="bold">Fricassée d'escargot</div>
-                            <div class="vignette_texte">Au piment d'espelette</div>
-                        </div>
-                        <div class="vignette_prix">25€</div>
-                        <div class="validation">
-                            <i class="fas fa-check-circle fa-2x"></i>
-                        </div>
-                    </div>
-
-                    <div class="entrees_choix" id="entrees_2">
-                        <div class="vignette_details">
-                            <div class="bold">Foie gras de canard mi-cuit</div>
-                            <div class="vignette_texte">Et ses copeaux de truffe noire</div>
-                        </div>
-                        <div class="vignette_prix">35€</div>
-                        <div class="validation">
-                            <i class="fas fa-check-circle fa-2x"></i>
-                        </div>
-                    </div>
-
-                    <div class="entrees_choix" id="entrees_3">
-                        <div class="vignette_details">
-                            <div class="bold">Oeuf au plat</div>
-                            <div class="vignette_texte">Assaisonné à la truffe sur lit de caviar</div>
-                        </div>
-                        <div class="vignette_prix">20€</div>
-                        <div class="validation">
-                            <i class="fas fa-check-circle fa-2x"></i>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="bloc_plats">
-
-                    <div class="bloc_plats_titre">
-                        <h3>PLATS</h3>
-                        <hr>
-                    </div>
-
-                    <div class="plats_choix" id="plats_1">
-                        <div class="vignette_details">
-                            <div class="bold">Filet de boeuf aux herbes</div>
-                            <div class="vignette_texte">Accompagné de sa ribambelle de légume</div>
-                        </div>
-                        <div class="vignette_prix">40€</div>
-                        <div class="validation">
-                            <i class="fas fa-check-circle fa-2x"></i>
-                        </div>
-                    </div>
-
-                    <div class="plats_choix" id="plats_2">
-                        <div class="vignette_details">
-                            <div class="bold">Parmentier de queue de boeuf</div>
-                            <div class="vignette_texte">À la truffe noire sur sa purée de panais</div>
-                        </div>
-                        <div class="vignette_prix">35€</div>
-                        <div class="validation">
-                            <i class="fas fa-check-circle fa-2x"></i>
-                        </div>
-                    </div>
-
-                    <div class="plats_choix" id="plats_3">
-                        <div class="vignette_details">
-                            <div class="bold">Filet de Turbot</div>
-                            <div class="vignette_texte">Aux agrumes</div>
-                        </div>
-                        <div class="vignette_prix">44€</div>
-                        <div class="validation">
-                            <i class="fas fa-check-circle fa-2x"></i>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="bloc_desserts">
-
-                    <div class="bloc_desserts_titre">
-                        <h3>DESSERTS</h3>
-                        <hr>
-                    </div>
-
-                    <div class="desserts_choix" id="desserts_1">
-                        <div class="vignette_details">
-                            <div class="bold">Paris-Brest</div>
-                            <div class="vignette_texte">Revisité</div>
-                        </div>
-                        <div class="vignette_prix">18€</div>
-                        <div class="validation">
-                            <i class="fas fa-check-circle fa-2x"></i>
-                        </div>
-                    </div>
-
-                    <div class="desserts_choix" id="desserts_2">
-                        <div class="vignette_details">
-                            <div class="bold">Macaron au chocolat d'exception</div>
-                            <div class="vignette_texte">Et glace à la vanille de Madagascar</div>
-                        </div>
-                        <div class="vignette_prix">22€</div>
-                        <div class="validation">
-                            <i class="fas fa-check-circle fa-2x"></i>
-                        </div>
-                    </div>
-
-                    <div class="desserts_choix" id="desserts_3">
-                        <div class="vignette_details">
-                            <div class="bold">Mousse au chocolat</div>
-                            <div class="vignette_texte">Au piment d'espelette et à la truffe noire</div>
-                        </div>
-                        <div class="vignette_prix">23€</div>
-                        <div class="validation">
-                            <i class="fas fa-check-circle fa-2x"></i>
-                        </div>
-                    </div>
-                </section>
+          <div class="entrees_choix" id="entrees_1">
+            <div class="vignette_details">
+              <div class="bold">Fricassée d'escargot</div>
+              <div class="vignette_texte">Au piment d'espelette</div>
             </div>
-
-            <div id="nav_div">
-                <button>Commander</button>
+            <div class="vignette_prix">25€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
             </div>
+          </div>
 
+          <div class="entrees_choix" id="entrees_2">
+            <div class="vignette_details">
+              <div class="bold">Foie gras de canard mi-cuit</div>
+              <div class="vignette_texte">Et ses copeaux de truffe noire</div>
+            </div>
+            <div class="vignette_prix">35€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+
+          <div class="entrees_choix" id="entrees_3">
+            <div class="vignette_details">
+              <div class="bold">Oeuf au plat</div>
+              <div class="vignette_texte">
+                Assaisonné à la truffe sur lit de caviar
+              </div>
+            </div>
+            <div class="vignette_prix">20€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+        </section>
+
+        <section id="bloc_plats">
+          <div class="bloc_plats_titre">
+            <h3>PLATS</h3>
+            <hr />
+          </div>
+
+          <div class="plats_choix" id="plats_1">
+            <div class="vignette_details">
+              <div class="bold">Filet de boeuf aux herbes</div>
+              <div class="vignette_texte">
+                Accompagné de sa ribambelle de légume
+              </div>
+            </div>
+            <div class="vignette_prix">40€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+
+          <div class="plats_choix" id="plats_2">
+            <div class="vignette_details">
+              <div class="bold">Parmentier de queue de boeuf</div>
+              <div class="vignette_texte">
+                À la truffe noire sur sa purée de panais
+              </div>
+            </div>
+            <div class="vignette_prix">35€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+
+          <div class="plats_choix" id="plats_3">
+            <div class="vignette_details">
+              <div class="bold">Filet de Turbot</div>
+              <div class="vignette_texte">Aux agrumes</div>
+            </div>
+            <div class="vignette_prix">44€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+        </section>
+
+        <section id="bloc_desserts">
+          <div class="bloc_desserts_titre">
+            <h3>DESSERTS</h3>
+            <hr />
+          </div>
+
+          <div class="desserts_choix" id="desserts_1">
+            <div class="vignette_details">
+              <div class="bold">Paris-Brest</div>
+              <div class="vignette_texte">Revisité</div>
+            </div>
+            <div class="vignette_prix">18€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+
+          <div class="desserts_choix" id="desserts_2">
+            <div class="vignette_details">
+              <div class="bold">Macaron au chocolat d'exception</div>
+              <div class="vignette_texte">
+                Et glace à la vanille de Madagascar
+              </div>
+            </div>
+            <div class="vignette_prix">22€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+
+          <div class="desserts_choix" id="desserts_3">
+            <div class="vignette_details">
+              <div class="bold">Mousse au chocolat</div>
+              <div class="vignette_texte">
+                Au piment d'espelette et à la truffe noire
+              </div>
+            </div>
+            <div class="vignette_prix">23€</div>
+            <div class="validation">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="nav_div">
+        <button>Commander</button>
+      </div>
     </main>
 
     <footer>
-        <div>
-            <span class="footer_logo">
-                ohmyfood
-            </span>
-        </div>
-        <ul>
-            <li>
-                <span class="footer_icone_ustensiles">
-                    <i class="fa-sharp fa-solid fa-utensils"></i>
-                </span>
-                <a href="#">
-                    <span class="footer_texte">Proposer un restaurant </span>
-                </a>
-            </li>
+      <div>
+        <span class="footer_logo"> ohmyfood </span>
+      </div>
+      <ul>
+        <li>
+          <span class="footer_icone_ustensiles">
+            <i class="fa-sharp fa-solid fa-utensils"></i>
+          </span>
+          <a href="#">
+            <span class="footer_texte">Proposer un restaurant </span>
+          </a>
+        </li>
 
-            <li>
-                <span class="footer_icone_main">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                </span>
-                <a href="#">
-                    <span class="footer_texte"> Devenir partenaire </span>
-                </a>
-            </li>
+        <li>
+          <span class="footer_icone_main">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </span>
+          <a href="#">
+            <span class="footer_texte"> Devenir partenaire </span>
+          </a>
+        </li>
 
-            <li>
-                <a href="#">
-                    <span class="footer_texte"> Mentions légales </span>
-                </a>
-            </li>
+        <li>
+          <a href="#">
+            <span class="footer_texte"> Mentions légales </span>
+          </a>
+        </li>
 
-            <li>
-                <a href="mailto:san@antonio.net">
-                    <span class="footer_texte"> Contact </span>
-                </a>
-            </li>
-        </ul>
+        <li>
+          <a href="mailto:san@antonio.net">
+            <span class="footer_texte"> Contact </span>
+          </a>
+        </li>
+      </ul>
     </footer>
-</body>
-
+  </body>
 </html>
